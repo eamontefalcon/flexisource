@@ -95,6 +95,10 @@ $app->configure('domains');
    $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
    $app->register(App\Providers\EventServiceProvider::class);
+   $app->register(LaravelDoctrine\ORM\DoctrineServiceProvider::class);
+   $app->register(LaravelDoctrine\Extensions\GedmoExtensionsServiceProvider::class);
+   $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+
 
 /*
 |--------------------------------------------------------------------------
