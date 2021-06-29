@@ -32,8 +32,6 @@ class ImportCustomerCommand extends Command
     public function __construct()
     {
         parent::__construct();
-
-        Artisan::command();
     }
 
     /**
