@@ -1,3 +1,14 @@
+# app installation 
+1. composer install
+2. php artisan doctrine:schema:create  
+3. ./vendor/bin/phpunit for unit testing
+4. php artisan import:customer (Note: only add 100 atleast)
+
+Route Available
+1. GET - /customers
+2. GET - /customers/{id}
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
