@@ -1,5 +1,7 @@
 <?php
 
+use App\Entities\Customer;
+
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
@@ -13,6 +15,13 @@
 |
 */
 
+use Doctrine\ORM\Query\ResultSetMapping;
+use LaravelDoctrine\ORM\Facades\EntityManager;
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/customers', 'CustomerController@index');
+$router->get('/customers/{id}', 'CustomerController@show');
+
